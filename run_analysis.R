@@ -20,15 +20,12 @@ runMobileDataAnalysis <- function(
             if (!file.exists(rawDataFile)) {
                 print(paste0(c("Downloading: ", rawDataUrl)))
 
-
                 # For non windows or if windows has a version of curl on the path. 
                 # download.file(rawDataUrl, destfile=rawDataFile, method="curl", extra = c("--insecure"))
-
-		# For windows: setInternet2 will use a different implementation for 
-		#              opening URLs that supports https.
-		setInternet2(TRUE)
+		        # For windows: setInternet2 will use a different implementation for 
+		        #              opening URLs that supports https.
+		        setInternet2(TRUE)
                 download.file(rawDataUrl, destfile=rawDataFile)
-
             }
             print("Unzipping data")
             unzip(rawDataFile, exdir = dataDir)

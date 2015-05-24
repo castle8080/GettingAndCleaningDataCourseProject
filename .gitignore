@@ -1,3 +1,7 @@
 *.zip
 *.txt
+*.html
+.*
 UCI HAR Dataset/
+.Rproj.user
+*.Rproj
