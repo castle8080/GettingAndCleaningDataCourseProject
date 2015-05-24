@@ -46,5 +46,6 @@ and run the script again.
 * detailedMobileData.txt - This file contains the merged raw data and is useful for debugging.
 * mobileAverageDataBySUbjectActivity - This file contains the average measurements for each unique subject and activity.
 
-Descriptions for the columsn in mobileAverageDataBySubjectActivty can be found here: [CodeBook.md]("CodeBook.md").
+Descriptions for the columsn in mobileAverageDataBySubjectActivty can be found
+in CodeBook.md.
 
